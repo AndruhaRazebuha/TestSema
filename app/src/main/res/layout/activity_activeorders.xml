@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActiveordersActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/new_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:background="@color/Clear"
+            android:text="Новые"
+            android:textAlignment="center"
+            android:textColor="@color/Grey_project"
+            android:textSize="28dp"
+            />
+
+
+        <Button
+
+            android:id="@+id/active_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:background="@color/Clear"
+            android:text="Активные"
+            android:textColor="@color/Blue_ptoject"
+            android:textSize="28dp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:background="@drawable/bottom_navigation_border"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:contentDescription="@string/button_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/list"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_weight="1"
+                />
+
+            <ImageButton
+                android:contentDescription="@string/button_proffile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

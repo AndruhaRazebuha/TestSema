@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="168dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="273dp"
+        android:background="@drawable/grey_border"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/Maxim"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="@string/Status"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-45dp"
+                android:layout_weight="1"
+                android:text="@string/Mech"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/test"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="@string/Telephone"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="@string/Phone"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:text="@string/mail"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="55dp"
+                android:layout_weight="1"
+                android:text="@string/examplemail"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="245dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="223dp"
+        android:background="@drawable/lkbutton"
+        android:contentDescription="@string/doneorders"
+        android:text="@string/welldone"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="323dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="580dp"
+        android:background="@drawable/lkbutton"
+        android:backgroundTint="@color/bluebackground"
+        android:contentDescription="@string/settings"
+        app:srcCompat="@drawable/settingshuli"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:background="@drawable/bottom_navigation_border"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:contentDescription="@string/button_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/list"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_weight="1"
+                />
+
+            <ImageButton
+                android:contentDescription="@string/button_proffile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>

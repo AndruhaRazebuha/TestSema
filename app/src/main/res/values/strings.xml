@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Автосалон</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="Maxim">Козлов Максим Игоревич</string>
+    <string name="Status">Должность</string>
+    <string name="Telephone">Телефон</string>
+    <string name="mail">E-mail</string>
+    <string name="Mech">Механик</string>
+    <string name="Phone">+79548357754</string>
+    <string name="examplemail">MaximK@mail.ru</string>
+    <string name="welldone">Выполненные заказы</string>
+    <string name="settings">Настройки</string>
+    <string name="doneorders">Выполненные заказы</string>
+    <string name="galochka">Утвердить</string>
+    <string name="nazad">Назад</string>
+    <string name="plus">Добавить</string>
+    <string name="input_searc">Введите для поиска</string>
+
+
+</resources>
